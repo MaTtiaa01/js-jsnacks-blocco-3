@@ -43,6 +43,8 @@ const cars = [
         alimentazione: "benzina",
     },
 ]
+
+
 // array auto a benzina
 const benzina = cars.filter((car) => {
     if (car.alimentazione === "benzina") {
@@ -52,7 +54,8 @@ const benzina = cars.filter((car) => {
 
 console.log(benzina);
 
-//array auato a diesel
+
+//array auto a diesel
 const diesel = cars.filter((car) => {
     if (car.alimentazione === "diesel") {
         return true
@@ -60,6 +63,7 @@ const diesel = cars.filter((car) => {
 })
 
 console.log(diesel);
+
 
 //array altre auto
 const other = cars.filter((car) => {
@@ -70,4 +74,5 @@ const other = cars.filter((car) => {
 })
 
 console.log(other);
+console.log(other[0].alimentazione);
 
