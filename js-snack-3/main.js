@@ -12,10 +12,17 @@ const animals = [
   { nome: 'gallina', famiglia: 'fasianidi', classe: 'uccelli' },
 ]
 
-const mammiferi = animals.filter((animal) => {
-    if (animal.classe === "mammiferi") {
-        return true
-    }
-})
+
+// ##### VERSIONE LUNGA####
+// const mammiferi = animals.filter((animal) => {
+//     if (animal.classe === "mammiferi") {
+//         return true
+//     }
+// })
+
+
+const mammiferi = animals.filter(animal => animal.classe === "mammiferi");
+
+
 
 console.log(mammiferi);
