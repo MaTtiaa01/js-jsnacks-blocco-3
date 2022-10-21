@@ -4,27 +4,14 @@ Es: [‘pippo’, ‘PLUTO’, ‘Paperino’] => [‘Pippo’, ‘Pluto’, ‘
 
 const firstArr = ["pippo","PLUTO","Paperino"];
 
-//devo fare un ciclo dentro firstArr che mi restituisce l'elemento
-//prendo ogni nome e lo trasformo in lowercase
-//mi seleziono la lettera iniziale di ogni nome e la metto in uppercase
-//devo sostituiere la lettera che ho con quella iniziale
-
-const finalArr = firstArr.map((name) => {
-
-    const lowerName = name.toLocaleLowerCase();
-    //console.log(lowerName);
-    const upperName = name[0].toUpperCase();
-    //console.log(upperName);
-
-    const firstChar = upperName;
+const finalARR = firstArr.map((element) => {
+    const firstChar = element.charAt(0).toUpperCase();
     console.log(firstChar);
-
-    const newChar = name[0].replace(firstChar); 
-    console.log(newChar);
-
-    return newChar
+    const sliceEl = element.slice(1).toLowerCase();
+    console.log(sliceEl);
+    return firstChar + sliceEl;
 })
 
-console.log(finalArr);
+console.log(finalARR);
 
 
